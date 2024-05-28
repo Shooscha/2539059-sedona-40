@@ -2,7 +2,7 @@
 
 * Студент: [Александра Бондаренко](https://up.htmlacademy.ru/htmlcss/40/user/2539059).
 * Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
-
+* Сайт: [Мой проект Седона](https://github.com/Shooscha/2539059-sedona-40/settings/pages)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
