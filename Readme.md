@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александра Бондаренко](https://up.htmlacademy.ru/htmlcss/40/user/2539059).
-* Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
+* Наставник: [Малик Киров] (https://htmlacademy.ru/profile/id17217).
 * Сайт: [Мой проект Седона](https://shooscha.github.io/2539059-sedona-40/)
 ---
 
