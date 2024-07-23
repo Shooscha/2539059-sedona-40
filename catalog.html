@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Каталог</title>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                     <a class="navigation-link" href="#">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
+                    <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
                 </li>
             </ul>
             <ul class="navigation-user">
@@ -49,7 +50,7 @@
                     <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Гостиницы</a>
+                    <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
                 </li>
             </ul>
         </header>
@@ -106,7 +107,7 @@
                     <label for="price-to">до</label>
                     <input class="field" type="number" name="price-to" id="price-to" value="9000">
                 </fieldset>
-                <button class="button" type="submit">Применить</button>
+                <button class="button-apply" type="submit">Применить</button>
                 <button class="button-reset" type="reset">Сбросить</button>
             </form>
         </section>
@@ -118,26 +119,28 @@
             </select>
             <ul class="sort-show">
                 <li>
-                    <a class="sort sort-current" href="catalog.html?view-tile">
-                        <span class="visually-hidden">Показать карточки</span></a>
+                    <a class="sort sort-current" href="#">
+                        <span class="visually-hidden">Плитками</span></a>
                 </li>
                 <li>
-                    <a class="sort" href="catalog.html?view-card">
+                    <a class="sort" href="#">
                         <span class="visually-hidden">Показать карточки с описанием</span></a>
                 </li>
                 <li>
-                    <a class="sort" href="catalog.html?view-list">
+                    <a class="sort" href="#">
                         <span class="visually-hidden">Показать список</span></a>
                 </li>
             </ul>
             <ul class="product-list">
                 <li class="hotel-card">
-                    <a class="hotel-card-link" href="#"><img class="hotel-card-image" src="images/amara-resort.jpg" width="300" height="212" alt="Вид через ущелье на ночное небо"></a>
+                    <a class="hotel-card-link" href="#">
+                        <img class="hotel-card-image" src="images/amara-resort.jpg" width="300" height="212" alt="Вид через ущелье на ночное небо">
+                    </a>
                     <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                     <p class="hotel-card-name">Гостиница</p>
                     <p class="hotel-card-price">От 4000 ₽</p>
                     <a class="show-more" href="#">Подробнее</a>
-                    <button class="favorites" type="button">В избранное</button>
+                    <button class="button-selected" type="button">В избранное</button>
                     <div class="stars"><span class="visually-hidden">Рейтинг: 4 звезды</span></div>
                     <p class="rating-result">Рейтинг: 8,5</p>
                 </li>
@@ -147,7 +150,7 @@
                     <p class="hotel-card-name">Гостиница</p>
                     <p class="hotel-card-price">От 5000 ₽</p>
                     <a class="show-more" href="#">Подробнее</a>
-                    <button class="favorites" type="button">В избранное</button>
+                    <button class="button-selected" type="button">В избранное</button>
                     <div class="stars"><span class="visually-hidden">Рейтинг: 4 звезды</span></div>
                     <p class="rating-result">Рейтинг: 9,2</p>
                 </li>
@@ -157,7 +160,7 @@
                     <p class="hotel-card-name">Гостиница</p>
                     <p class="hotel-card-price">От 2500 ₽</p>
                     <a class="show-more" href="#">Подробнее</a>
-                    <button class="favorites" type="button">В избранное</button>
+                    <button class="button-selected" type="button">В избранное</button>
                     <div class="stars"><span class="visually-hidden">Рейтинг: 3 звезды</span></div>
                     <p class="rating-result">Рейтинг: 6,9</p>
                 </li>
@@ -167,7 +170,7 @@
                     <p class="hotel-card-name">Гостиница</p>
                     <p class="hotel-card-price">От 1500 ₽</p>
                     <a class="show-more" href="#">Подробнее</a>
-                    <button class="favorites" type="button">В избранное</button>
+                    <button class="button-selected" type="button">В избранное</button>
                     <div class="stars"><span class="visually-hidden">Рейтинг: 2 звезды</span></div>
                     <p class="rating-result">Рейтинг: 5,0</p>
                 </li>
