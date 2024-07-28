@@ -52,8 +52,8 @@
     }
 
     .navigation {
-        display: flex;
         margin: 0 auto;
+        display: flex;
     }
 
     .navigation-logo {
@@ -109,10 +109,10 @@
     /* Hero */
 
     .hero {
-        background-image: url(../images/welcome.jpg);
-        color: #000;
+        background-image: url(../images/main-background.jpg);
         background-size: 100% auto, cover;
         background-repeat: no-repeat;
+        background-color: rgba(131, 179, 211, 0.12);
     }
     /* Advantages */
 
@@ -120,17 +120,30 @@
         background-color: #82B3D3;
     }
 
-    .advantages-title,
-    .services-title {
+    .advantages-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .advantages-title {
         font-size: 30px;
         line-height: 36px;
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
-        color: #000
+        color: #000;
+        width: 620px;
+        margin: 69px auto 25px;
     }
 
-    .advantages-item-title,
+    .advantages-description {
+        margin-bottom: 69px;
+    }
+
+    .advantages-item:nth-child(3) {
+        background-color: rgba(131, 179, 211, 0.12);
+    }
+
     .services-item-title {
         font-size: 24px;
         line-height: 28px;
@@ -145,24 +158,46 @@
         color: #333;
     }
 
-    .services-item-description {
-        font-size: 18px;
-        line-height: 21px;
-        color: #333;
-    }
-
     .text-white {
         color: #fff;
     }
     /* Services */
 
+    .services-title {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+        margin: 64px auto 20px;
+        width: 505px;
+    }
+
     .services-list {
         list-style-type: none;
         text-align: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .services-item {
+        padding: 81px 85px;
     }
 
     .services-description {
         margin-bottom: 64px;
+    }
+
+    .services-item:nth-child(odd) {
+        background-color: rgba(131, 179, 211, 0.12);
+    }
+
+    .services-item-description {
+        font-size: 18px;
+        line-height: 21px;
+        color: #333;
     }
     /* Book */
 
@@ -187,6 +222,35 @@
         height: 52px;
         text-transform: uppercase;
         font-family: "PT Sans", sans-serif;
+    }
+
+    .pagination-link {
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align: center;
+        background-color: #82b3d3;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .pagination-link-expand {
+        font-family: inherit;
+        background: none;
+        border-radius: 4px;
+        color: #000;
+        font-size: 22px;
+    }
+
+    .pagination-current {
+        font-family: inherit;
+        background-color: #f2f2f2;
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 4px;
     }
     /* Subscribe */
 
@@ -238,17 +302,6 @@
         font-family: "PT Sans", sans-serif;
     }
 
-    .page-footer-container {
-        display: flex;
-        width: 940px;
-        margin: 0 auto;
-    }
-
-    .social-media-list {
-        margin-left: auto;
-        max-width: 142px;
-    }
-
     .inner-header {
         color: #fff;
     }
@@ -258,6 +311,7 @@
         background-size: 100% auto;
         background-repeat: no-repeat;
         color: #fff;
+        background-color: #82B3D3;
     }
 
     .inner-header-title {
@@ -268,6 +322,13 @@
 
     .breadcrumbs-link {
         font-size: 16px;
+        line-height: 21px;
+    }
+
+    .select-control {
+        font-family: inherit;
+        background-color: #fff;
+        font-size: 18px;
         line-height: 21px;
     }
 
@@ -287,7 +348,9 @@
     .price-to {
         font-size: 18px;
         line-height: 24px;
-        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        color: #000;
+        font-family: inherit;
     }
 
     .search-result-title {
