@@ -225,6 +225,17 @@ ul {
     background-color: #e5e5e5;
 }
 
+.catalog-current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 93px;
+    right: 15px;
+    background: #756257;
+    height: 2px;
+    z-index: 2;
+}
+
 
 /* Hero */
 
@@ -509,6 +520,11 @@ ul {
     padding: 96px 0 104px;
 }
 
+.subscription-catalog {
+    width: 1200px;
+    padding: 96px 0 104px;
+}
+
 .subscription-title {
     text-transform: uppercase;
     font-size: 30px;
@@ -593,6 +609,10 @@ ul {
 
 .subscribe-button:disabled {
     background-color: #e5e5e5;
+}
+
+.text-black {
+    color: #000;
 }
 
 
@@ -803,15 +823,28 @@ ul {
 /* search */
 
 .search-result {
-    width: 1060px;
+    text-align: left;
+    padding: 0 70px;
+    margin-bottom: 60px;
+}
+
+.search-wrapper {
     display: flex;
-    padding: 50px 70px 40px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .search-result-title {
     font-size: 30px;
     line-height: 36px;
     margin-right: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sorting-type {
+    margin-right: auto;
+    position: relative;
 }
 
 .sort {
@@ -819,9 +852,56 @@ ul {
     height: 48px;
 }
 
+.catalog-view {
+    display: flex;
+    column-gap: 8px;
+    max-width: 160px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-left: 70px;
+}
+
 .select-control {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 117%;
+    color: #333;
+    padding-left: 18px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
     width: 292px;
-    height: 49px;
+    min-height: 49px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.select-control-arrow {
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    fill: #000;
+}
+
+.select-control:hover {
+    border: 2px solid #68a2ca;
+}
+
+.select-control:focus {
+    outline: 2px solid #68a2ca;
+}
+
+.select-control:active {
+    background-color: #e6e6e6;
+}
+
+.select-control:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.select-control:disabled+.select-control-arrow {
+    fill: rgba(0, 0, 0, 0.3);
 }
 
 .price {
